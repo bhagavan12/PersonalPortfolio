@@ -142,6 +142,15 @@
     },
     {
       "id": "2",
+      "src": "./img/linkspace.gif",
+      "title": "LinkSpace",
+      "description": "This project is a social media application where users can connect with friends ,share posts and Used technoloigies are ReactJS , Firebase Authentication and Database",
+      "linkd": "https://linkspace-sb.vercel.app/",
+      "linkg": "https://github.com/bhagavan12/LIn",
+      "used":["ReactJS","Firebase","CSS","BootStrap","Vercel"]
+    },
+    {
+      "id": "3",
       "src": "./img/ezgif.com-crop.gif",
       "title": "Stockhive",
       "description": " Your go-to destination for real-time stock market updates and insights. Stay ahead of the curve with personalized watchlists and dynamic charts.",
