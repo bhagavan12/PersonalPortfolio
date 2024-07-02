@@ -11,47 +11,49 @@ export default function Testimonial() {
   };
 
   return (
-    <>
-    {/* <Navbar /> */}
-          <h2 className="mainheading-box">Achievements</h2>
-    <section className="testimonial--section" id="testimonial">
-      <div className="portfolio--container-box">
+    <div>
+      {/* <Navbar /> */}
+      {/* <h2 className="mainheading-box">Achievements</h2> */}
+      <h2 className="heading" style={{ padding: "10px", paddingLeft: "50px", paddingRight: "50px", borderRadius: "10px", margin: "auto", fontSize: "x-large", width: "fit-content" }}>Certifications<span class="game-icons--achievement"></span></h2>
+      <div className="testimonial--section" id="testimonial">
+        {/* <div className="portfolio--container-box">
         <div className="portfolio--container">
           <h2 className="sideheading-box">Certifications</h2>
         </div>
-      </div>
-      <div className="achieve--section--container">
-        {data?.achievement_certificates?.map((item, index) => (
-          <div className="card-ach" onClick={() => handleCertificate(item.link)}>
-            <div className="text-ach">
-              <span>{item.title}</span>
-              <img src={item.src} style={{ width: "10em" }} />
-              <span>{item.date}</span>
-              {/* <p className="subtitle-ach">Vivamus nisi purus</p> */}
+      </div> */}
+        <div className="achieve--section--container">
+          {data?.achievement_certificates?.map((item, index) => (
+            <div className="card-ach" onClick={() => handleCertificate(item.link)}>
+              <div className="text-ach">
+                <span>{item.title}</span>
+                <img src={item.src} style={{ width: "10em" }} />
+                <span>{item.date}</span>
+                {/* <p className="subtitle-ach">Vivamus nisi purus</p> */}
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-      <div className="portfolio--container-box">
+          ))}
+        </div>
+        {/* <div className="portfolio--container-box">
         <div className="portfolio--container">
           <h2 className="sideheading-box">Publications</h2>
-          <h5 className="">I have worked on and published a few research papers and publications of my own.</h5>
         </div>
-      </div>
-      <div className="pub--section--card" data-aos="zoom-in-up" data-aos-duration="1000">
-        {data?.publications?.map((item, index) => (
-          <div className="" onClick={() => handleCertificate(item.link)} >
-            <div className="text-ach">
-              <h2 id="h2">{item.title}</h2>
-              <h6 id="h6">{item.des}</h6>
-              <h5 id="sp">{item.date}</h5>
+      </div> */}
+        <h2 className="heading" style={{ padding: "10px", paddingLeft: "50px", paddingRight: "50px", borderRadius: "10px", margin: "auto", fontSize: "x-large", width: "fit-content" }}>Publications<span class="marketeq--research "></span></h2>
+        {/* <h5 className="">I have worked on and published a few research papers and publications of my own.</h5> */}
+        <div className="skills--section--container" data-aos="zoom-in-up" data-aos-duration="1000" style={{overflowX:"auto"}}>
+          {data?.publications?.map((item, index) => (
+            <div className="" onClick={() => handleCertificate(item.link)} >
+              <div className="text-ach">
+                <h2 id="h2">{item.title}</h2>
+                <h6 id="h6">{item.des}</h6>
+                <h5 id="sp">{item.date}</h5>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
 
-    </section>
-    </>
+      </div>
+    </div>
   );
 }
 

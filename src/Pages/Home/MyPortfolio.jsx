@@ -12,20 +12,20 @@ export default function MyPortfolio() {
   }
   return (
     <section className="portfolio--section" id="MyPortfolio">
-        <h2 className=""  style={{fontFamily:"'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif",margin:"-100px auto 0px auto ",backgroundColor:"#0000",borderLeft:"5px solid #0c6cf4ac",borderRight:"5px solid #0c6cf4ac",padding:"10px",paddingLeft:"50px",paddingRight:"50px",borderRadius:"10px",boxShadow:" 0 0 16px 0 rgba(0, 0, 0, 0.1)",background:"linear-gradient(to right,#73a7f1ac,#0000,#0000,#0000,#73a7f1ac)"}}>Projects</h2>
-
+    <h2 className="heading" style={{ padding: "10px", paddingLeft: "50px", paddingRight: "50px",borderRadius: "10px",margin:"auto", fontSize: "x-large",width:"fit-content" ,margin:"-100px auto 0px auto "}}>Projects<span class="eos-icons--project-outlined"></span></h2>
+        {/* <h2 className=""  style={{fontFamily:"'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif",margin:"-100px auto 0px auto ",backgroundColor:"#0000",borderLeft:"5px solid #0c6cf4ac",borderRight:"5px solid #0c6cf4ac",padding:"10px",paddingLeft:"50px",paddingRight:"50px",borderRadius:"10px",boxShadow:" 0 0 16px 0 rgba(0, 0, 0, 0.1)",background:"linear-gradient(to right,#73a7f1ac,#0000,#0000,#0000,#73a7f1ac)"}}>Projects</h2> */}
       <div className="portfolio--container-box">
-        <div className="portfolio--container">
+        {/* <div className="portfolio--container">
 
-          {/* <h2 className="section--heading">My Portfolio</h2> */}
-          {/* style={{
+          <h2 className="section--heading">My Portfolio</h2>
+          style={{
               borderLeft: "5px solid #0c6cf4ac",
               borderRadius: "5px", padding: "7px", margin: "0px 0px 0px 0px",
               fontFamily: "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif",
               boxShadow: " 0 0 16px 0 rgba(0, 0, 0, 0.2)", background: "linear-gradient(to right,#73a7f1ac,#0000,#0000,#0000)"
-            }} */}
-          {/* <h4 className="sideheading-box">My Portfolio</h4> */}
-        </div>
+            }}
+          <h4 className="sideheading-box">My Portfolio</h4>
+        </div> */}
         <div>
           <button className="btn btn-github" onClick={() => handleGit("https://github.com/bhagavan12")}>
             <i className="bi--github-small"></i>
@@ -33,7 +33,8 @@ export default function MyPortfolio() {
           </button>
         </div>
       </div>
-      <div className="portfolio--section--container">
+      <div className="portfolio--section--container" data-aos="fade-down"
+          data-aos-duration="850">
         {data?.portfolio?.map((item, index) => (
           <div key={index} className="portfolio--section--card" data-aos="zoom-in">
             <div className="portfolio--section--img">
