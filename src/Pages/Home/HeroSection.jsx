@@ -1,6 +1,6 @@
 import Testimonial from "./Testimonials";
 import Button from "react-bootstrap/Button";
-import pdf from "./2100032454-Javvadi Sai Bhagavan.pdf";
+import pdf from "./2100032454-J Sai Bhagavan _5.pdf";
 import { NavLink, Link } from "react-router-dom";
 export default function HeroSection() {
   return (
