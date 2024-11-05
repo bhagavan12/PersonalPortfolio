@@ -133,6 +133,15 @@
   "portfolio": [
     {
       "id": "1",
+      "src": "./img/bookrary.gif",
+      "title": "Bookrary",
+      "description": " A platform for book lovers to curate personal libraries, track reading progress, and locate books by keywords, title, genre, or publication date. ",
+      "linkd": "",
+      "linkg": "https://github.com/bhagavan12/bookrary_fe",
+      "used":["ReactJS","Redux","MySQL","ExpressJS"]
+    },
+    {
+      "id": "2",
       "src": "./img/ezgif.com-animated-gif-maker.gif",
       "title": "DealsBlendr",
       "description": "This DealsBlendr application is built using ReactJs and Spring framework. It is useful for users who are searching for better prices of electronic devices.",
@@ -141,7 +150,7 @@
       "used":["Java","SpringBoot","Hibernate","ReactJS","MongoDB","netlify","render"]
     },
     {
-      "id": "2",
+      "id": "3",
       "src": "./img/linkspace.gif",
       "title": "LinkSpace",
       "description": "This project is a social media application where users can connect with friends ,share posts and Used technoloigies are ReactJS , Firebase Authentication and Database",
@@ -150,7 +159,7 @@
       "used":["ReactJS","Firebase","CSS","BootStrap","Vercel"]
     },
     {
-      "id": "3",
+      "id": "4",
       "src": "./img/ezgif.com-crop.gif",
       "title": "Stockhive",
       "description": " Your go-to destination for real-time stock market updates and insights. Stay ahead of the curve with personalized watchlists and dynamic charts.",
@@ -159,7 +168,7 @@
       "used":["ReactJS","ExpressJS","BootStrap","MongoDB","netlify","NodeJS"]
     },
     {
-      "id": "3",
+      "id": "5",
       "src": "./img/ezgif.com-speed.gif",
       "title": "DishDiscovery",
       "description": "an interactive web app featuring step-by-step recipes and meal tutorials tailored for culinary enthusiasts",
@@ -168,22 +177,13 @@
       "used":["ReactJS","APIs","JavaScript","CSS"]
     },
     {
-      "id": "4",
+      "id": "6",
       "src": "./img/votingapp_gif.gif",
       "title": "Cloud Voting App",
       "description": "Developed a cloud-native voting app with AWS services and React.js, leveraging DynamoDB, Lambda, API Gateway, and S3, Firebase for easy authentication. ",
       "linkd": "",
       "linkg": "https://github.com/bhagavan12/cloudvotingapp",
       "used":["ReactJS","AWS","Firebase"]
-    },
-    {
-      "id": "5",
-      "src": "./img/ezgif.com-animated-gif-maker-sportify1.gif",
-      "title": "Sportifylife",
-      "description": "Me and my team developed prototype 'Sportify' for Smart India Hackathon 2023",
-      "linkd": "https://sportifylife.netlify.app/",
-      "linkg": "https://github.com/varshith24/Smart-India-Hackathon-24",
-      "used":["ReactJS","ExpressJS","BootStrap","MongoDB","netlify","NodeJS"]
     }
      
   ],

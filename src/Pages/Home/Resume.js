@@ -75,7 +75,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import pdf from "./2100032454-J Sai Bhagavan _5.pdf";
+import pdf from "./FE_2100032454_J Sai Bhagavan.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
@@ -94,7 +94,7 @@ function ResumeNew() {
                 </Row>
                 <Row className="resume">
                     <Document file={pdf} className="d-flex justify-content-center">
-                        <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} renderTextLayer={false} /> {/* Setting renderTextLayer prop to false */}
+                        <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} renderTextLayer={false} /> 
                     </Document>
                 </Row>
             </Container>
