@@ -75,8 +75,11 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import pdf from "./FE_2100032454_J Sai Bhagavan.pdf";
+import pdf from "./2100032454-J Sai Bhagavan _n1.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
+import { Worker, Viewer } from '@react-pdf-viewer/core';
+import '@react-pdf-viewer/core/lib/styles/index.css';
+import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
@@ -92,11 +95,13 @@ function ResumeNew() {
                 <Row className="rowresume" >
                     <Button variant="primary" href={pdf} target="_blank" style={{ maxWidth: "250px" }}>Download Resume</Button>
                 </Row>
-                <Row className="resume">
-                    <Document file={pdf} className="d-flex justify-content-center">
-                        <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} renderTextLayer={false} /> 
-                    </Document>
-                </Row>
+                {/* <Row className="resume"> */}
+                    <div className="pdf-container">
+                        <Worker workerUrl={`https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js`}>
+                            <Viewer fileUrl={pdf} className="pdf-viewer" />
+                        </Worker>
+                    </div>
+                {/* </Row> */}
             </Container>
         </div>
     );

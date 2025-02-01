@@ -39,11 +39,11 @@ export default function AboutMe() {
                 {/* <i className="fa--university" /> */}
               </div>
               <div style={{ flexDirection: "row", textAlign: "" }}>
-                <h3 className="header-about" style={{ flex: 0.9, textAlign: "" }}>Sasi Junior College<span className="sp1">,Palakollu</span><span>(2019-21)</span></h3>
+                <h3 className="header-about" style={{ flex: 0.9, textAlign: "" }}>Sasi Jr College<span className="sp1">,Palakollu</span><span>(2019-21)</span></h3>
                 <p>12th Class, <i style={{ fontStyle: "normal", fontSize: "medium", }}>MARKS:971</i></p>
               </div>
             </div>
-            <div className="testimonial--section--car-header " style={{ borderLeft: "5px solid #0c6cf4ac", display: "flex" }}>
+            <div className="testimonial--section--car-header " style={{ display: "flex" }}>
               <div className="" style={{ flexDirection: "row" }}>
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGZBnugG3vnsdqzgo2dSY-qLmlxw3Kp2PwYKVor0HgVw&shttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGZBnugG3vnsdqzgo2dSY-qLmlxw3Kp2PwYKVor0HgVw&s" style={{ width: "4em" }}></img>
                 {/* <i className="fa--university" /> */}

@@ -69,7 +69,7 @@ export default function MyPortfolio() {
             </div>
             <div style={{display: "flex", flexWrap: "wrap",margin:"auto" }}>
               {item?.used?.map((a,i)=>(
-                <div style={{width:'fit-content',boxShadow: "0 0 32px 0 rgba(0, 0, 0, 0.15)",padding:"3px",marginLeft:"5px",backgroundColor:"#73a7f1ac",borderRadius:"10px",margin:"2px 4px"}}>{a}</div>
+                <div style={{width:'fit-content',boxShadow: "0 0 32px 0 rgba(0, 0, 0, 0.15)",padding:"3px",marginLeft:"5px",backgroundColor:"#b0dbb8",borderRadius:"10px",margin:"2px 4px"}}>{a}</div>
               ))
               }
             </div>
